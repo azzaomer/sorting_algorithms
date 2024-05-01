@@ -24,9 +24,12 @@ void swap(int *array, size_t a, size_t b)
 int median_of_3(int *array, size_t low, size_t high, size_t size)
 {
     int pivot = low + (high-low)/2;
-    if (array[high] < array[low]) swap(array, low, high);
-    if (array[pivot] < array[low]) swap(array, low, pivot);
-    if (array[high] < array[pivot]) swap(array, pivot, high);
+    if (array[high] < array[low]) 
+	    swap(array, low, high);
+    if (array[pivot] < array[low]) 
+	    swap(array, low, pivot);
+    if (array[high] < array[pivot]) 
+	    swap(array, pivot, high);
     print_array(array, size);
     return pivot;
 }
