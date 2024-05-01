@@ -34,11 +34,11 @@ int median_of_3(int *array, size_t low, size_t high, size_t size)
     return pivot;
 }
 /**
- *qs - qucksort algorithm implementation
- *@array: array
- *@first: first array element
- *@last: last array element
- *@size: array size
+ * quicks - qucksort algorithm implementation
+ * @array: array
+ * @first: first array element
+ * @last: last array element
+ * @size: array size
  */
 void quicks(int *array, size_t first, size_t last, int size)
 {
@@ -52,9 +52,9 @@ void quicks(int *array, size_t first, size_t last, int size)
 	}
 }
 /**
- *quick_sort - prepare the terrain to quicksort algorithm
- *@array: array
- *@size: array size
+ * quick_sort - prepare the terrain to quicksort algorithm
+ * @array: array
+ * @size: array size
  */
 void quick_sort(int *array, size_t size)
 {
