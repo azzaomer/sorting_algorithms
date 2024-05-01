@@ -1,9 +1,9 @@
 #include "sort.h"
 /**
-*swap - swaps the positions of two elements into an array
-*@array: array
-*@a: array element
-*@b: array element
+* swap - swaps the positions of two elements into an array
+* @array: array
+* @a: array element
+* @b: array element
 */
 void swap(int *array, size_t a, size_t b)
 {
