@@ -25,4 +25,11 @@ void swap(int *array, size_t a, size_t b);
 void quicks(int *array, size_t first, size_t last, int size);
 int median_of_3(int *array, size_t low, size_t high, size_t size);
 void quick_sort(int *array, size_t size);
+/*void swap(int *a, int *b);
+int median_of_three(int arr[], int low, int high, size_t size);
+int partition(int arr[], int low, int high, size_t size);
+void quicksort(int arr[], int low, int high, size_t size);*/
+void quick_sort(int *array, size_t size);
+void sort_alg(int *arr, int left, int right, size_t size);
+int split(int *arr, int left, int right, size_t size);
 #endif
