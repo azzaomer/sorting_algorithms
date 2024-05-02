@@ -4,7 +4,7 @@
   * @array: array to be sorted
   * @size: size of array
   */
-void quick_sort(int *array, size_t size)
+void quicks(int *array, size_t size)
 {
 	if (array == NULL || size <= 1)
 		return;
@@ -18,7 +18,7 @@ void quick_sort(int *array, size_t size)
   * @right: rightmost index
   * @size: full size of array
   */
-void sort_alg(int *arr, int left, int right, size_t size)
+void quick_sort(int *arr, int left, int right, size_t size)
 {
 	int pivot;
 
@@ -31,17 +31,16 @@ void sort_alg(int *arr, int left, int right, size_t size)
 }
 
 /**
-  * split - split array
+  * partition - split array
   * @arr: array
   * @left: leftmost element
   * @right: rightmost element
   * @size: full array size
   * Return: pivot index
   */
-int split(int *arr, int left, int right, size_t size)
+int partition(int *arr, int left, int right, size_t size)
 {
 	int i, j, pivot, tmp;
-
 	pivot = arr[right];
 	i = left;
 
