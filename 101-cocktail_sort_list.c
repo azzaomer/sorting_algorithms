@@ -6,7 +6,7 @@
  * @node1: first node to sort
  * @node2: second node to sort
  */
-void swap(listint_t **head, listint_t *node1, listint_t *node2)
+void swap_list(listint_t **head, listint_t *node1, listint_t *node2)
 {
 	listint_t *prev, *next;
 
@@ -41,7 +41,7 @@ void cocktail_sort_list(listint_t **list)
 		{
 			if (head->n > head->next->n)
 			{
-				swap(list, head, head->next);
+				swap_list(list, head, head->next);
 				print_list(*list);
 				flag = 1;
 				head = head->prev;
@@ -54,7 +54,7 @@ void cocktail_sort_list(listint_t **list)
 		{
 			if (head->n < head->prev->n)
 			{
-				swap(list, head->prev, head);
+				swap_list(list, head->prev, head);
 				print_list(*list);
 				flag = 1;
 				head = head->next;
